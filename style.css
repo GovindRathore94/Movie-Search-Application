@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #39297b;
+    color: #ffffff;
+}
+h1{
+    text-align: center;
+    margin: 100px auto 50px;
+    font-weight: 600;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    background-color: #434989;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 30px;
+}
+form button{
+    width: 15%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: #ff3929;
+    color: #fff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+::placeholder{
+    color: #fff;
+    font-size: 18px;
+}
+#show-more-btn{
+    background: #ff3929;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+}
+#search-result{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+#search-result img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#credit{
+    color: #9569e7b0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+@media(max-width: 445px){
+    body{
+        background-color: #39297b;
+        color: #ffffff;
+    }
+    h1{
+        text-align: center;
+        margin: 100px auto 50px;
+        font-weight: 400;
+    }
+    form{
+        width: 90%;
+        max-width: 540px;
+        height: 60px;
+        background-color: #434989;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }   
+    form input{
+        flex: 1;
+        height: 100%;
+        margin: 50px auto 50px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        color: #fff;
+        font-size: 18px;
+        padding: 0 30px;
+    }
+    form button{
+        width: 25%;
+        height: 100%;
+        border: 0;
+        outline: 0;
+        background: #ff3929;
+        color: #fff;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    ::placeholder{
+        color: #fff;
+        font-size: 18px;
+    }
+    #search-result{
+        width: 85%;
+        margin: 50px auto 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    #search-result img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
