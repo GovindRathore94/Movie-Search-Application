@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Image Search Project</title>
-</head>
-<body>
-    <h1 class="heading">Image search engine</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Guide App</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <h1>Movie Guide App By GK</h1>
+        </div>
+        <div class="search-container">
+          <form action="">
+            <input type="text" placeholder="Search movie" class="inputBox" />
+            <button type="submit" class="searchBtn">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-    <form id="search-form">
-    <input type="text" id="search-box" placeholder="Search Anything here">
-    <button class="btn">Search</button>
-    
-    </form>
+    <!-- Main section of Movie Data -->
+    <main>
+      <section>
+        <div class="movie-container noBackgroung">
+          <h2>Search Movie Details Here.</h2>
+          <div class="movie-postar"></div>
+          <div class="movie-details"></div>
+        </div>
+      </section>
+    </main>
 
-    <div id="search-result"></div>
-    <button id="show-more-btn">Show More</button>
-
-    <p id="credit">This image has been coming from Unsplash.</p>
-</body>
+    <footer>
+      <p>&copy; 2023 Movie Guide App</p>
+    </footer>
+  </body>
 </html>
